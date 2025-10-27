@@ -30,3 +30,43 @@
   .message-field{
     min-width: 500px
   }
+
+  .typing-indicator {
+  font-style: italic;
+  color: #666;
+  margin: 5px 0;
+  animation: blink 1.2s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.message-bubble {
+  position: relative;
+  margin: 6px 0;
+  padding: 8px 12px;
+  border-radius: 12px;
+  max-width: 60%;
+  word-wrap: break-word;
+}
+
+.sent {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+}
+
+.received {
+  background-color: #f1f0f0;
+  align-self: flex-start;
+}
+
+.timestamp {
+  display: block;
+  font-size: 0.75rem;
+  color: gray;
+  text-align: right;
+  margin-top: 2px;
+}
